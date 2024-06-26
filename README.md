@@ -69,7 +69,7 @@ You can use AlzyFinder locally (download repository and install dependencies).
 Please contact us if you have questions or suggestions!
 
 * If you have questions regarding our the ML models deposited here, please open an issue on our GitHub repository: https://github.com/ramirezlab/AlzyFinder/issues
-* If you have questions regarding our [Alzyfinder Platform](https://www.alzyfinder-platform.udec.cl) please contact uf via [this form](https://ramirezlab.github.io/7_contact)
+* If you have questions regarding our [AlzyFinder Platform](https://www.alzyfinder-platform.udec.cl) please contact uf via [this form](https://ramirezlab.github.io/7_contact)
 * If you have ideas for new AD targets, or how to imporve our [Alzyfinder Platform](https://www.alzyfinder-platform.udec.cl), please send your ideas via [this form](https://ramirezlab.github.io/7_contact)
 * For all other requests, please send us an email: dramirezs@udec.cl
 
@@ -84,13 +84,13 @@ To view a copy of this license, visit https://opensource.org/license/mit.
 ## Citation
 (Back to [Table of contents](#table-of-contents))
 
-The authors of the [Alzyfinder Platform](https://www.alzyfinder-platform.udec.cl) received public funding from the following funders:
+The authors of the [AlzyFinder Platform](https://www.alzyfinder-platform.udec.cl) received public funding from the following funders:
 * Agencia Nacional de Investigación y DEsarrollo - Chile (Grant Number Fondecyt Regular 1220656) 
 
-If you make use of the [Alzyfinder Platform](https://www.alzyfinder-platform.udec.cl) material in scientific publications, please cite our respective articles:
+If you make use of the [AlzyFinder Platform](https://www.alzyfinder-platform.udec.cl) material in scientific publications, please cite our respective articles:
 * Pending....
 
-It will help measure the impact of the [Alzyfinder Platform](https://www.alzyfinder-platform.udec.cl) and future funding!!!
+It will help measure the impact of the [AlzyFinder Platform](https://www.alzyfinder-platform.udec.cl) and future funding!!!
 
 This repository was inspired and adapted from [TeachOpenCADD](https://github.com/dominiquesydow/TeachOpenCADD).
  
