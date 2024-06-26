@@ -85,7 +85,7 @@ To view a copy of this license, visit https://opensource.org/license/mit.
 (Back to [Table of contents](#table-of-contents))
 
 The authors of the [AlzyFinder Platform](https://www.alzyfinder-platform.udec.cl) received public funding from the following funders:
-* Agencia Nacional de Investigación y DEsarrollo - Chile (Grant Number Fondecyt Regular 1220656) 
+* Agencia Nacional de Investigación y Desarrollo (ANID) -  Fondo Nacional de Desarrollo Científico y Tecnológico (FONDECYT) – Chile (Grant No. 1220656) 
 
 If you make use of the [AlzyFinder Platform](https://www.alzyfinder-platform.udec.cl) material in scientific publications, please cite our respective articles:
 * Pending....
