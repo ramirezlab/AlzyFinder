@@ -76,9 +76,22 @@ Please contact us if you have questions or suggestions!
 We are looking forward to hearing from you!
 
 ## License
-(Back to [Table of contents](#table-of-contents).)
+(Back to [Table of contents](#table-of-contents))
 
-This work is licensed under the MIT license (CC BY 4.0).
-To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/.
+This work is licensed under the MIT license.
+To view a copy of this license, visit https://opensource.org/license/mit.
+
+## Citation
+(Back to [Table of contents](#table-of-contents))
+
+The authors of the [Alzyfinder Platform](https://www.alzyfinder-platform.udec.cl) received public funding from the following funders:
+* Agencia Nacional de Investigación y DEsarrollo - Chile (Grant Number Fondecyt Regular 1220656) 
+
+If you make use of the [Alzyfinder Platform](https://www.alzyfinder-platform.udec.cl) material in scientific publications, please cite our respective articles:
+* Pending....
+
+It will help measure the impact of the [Alzyfinder Platform](https://www.alzyfinder-platform.udec.cl) and future funding!!!
+
+This repository was inspired and adapted from [TeachOpenCADD](https://github.com/dominiquesydow/TeachOpenCADD).
  
 
