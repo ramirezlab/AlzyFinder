@@ -1,0 +1,15 @@
+name: AlzyFinder
+channels:
+  - conda-forge
+  - schrodinger
+  - defaults
+dependencies:
+  - python=3.9
+  - pip
+  - pandas
+  - numpy
+  - rdkit
+  - scikit-learn
+  - scikit-optimize
+  - pip:
+    - xgboost
