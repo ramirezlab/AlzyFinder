@@ -1,10 +1,7 @@
 # AlzyFinder
 #### AlzyFinder Platform: A web-based tool for ligand-based virtual screening and network pharmacology
 
-[Ramirez Lab](https://ramirezlab.github.io/index)
-
-Pharmacoinformatics and Systems Pharmacology
-[Facultad de Ciencias Biológicas](https://cienciasbiologicasudec.cl/) - [Universidad de Concepción](https://www.udec.cl/pexterno/) <br>
+[Pharmacoinformatics and Systems Pharmacology lab](https://ramirezlab.github.io/index) at [Facultad de Ciencias Biológicas](https://cienciasbiologicasudec.cl/) - [Universidad de Concepción](https://www.udec.cl/pexterno/) <br>
 
 ## Table of contents  
 
@@ -39,7 +36,7 @@ You can use AlzyFinder locally (download repository and install dependencies).
 
 #### Linux - Install locally
 
-1.  Get your local copy of the AlzyFinder repository by:
+-  Get your local copy of the AlzyFinder repository by:
 
     - Downloading it as zip archive and unzipping it.
     - Cloning it to your computer using the package `git`:
@@ -48,9 +45,9 @@ You can use AlzyFinder locally (download repository and install dependencies).
         git clone https://github.com/ramirezlab/AlzyFinder.git
         ```
         
-2.  Use the [Anaconda](https://docs.anaconda.com/anaconda/install/) for a clean package version management. 
+-  Use the [Anaconda](https://docs.anaconda.com/anaconda/install/) for a clean package version management. 
    
-3.  Use the package management system conda to create an environment (called `AlzyFinder`) to perfom locally the ligand-based virtual screening (LBVS) using up to 255 machine learning (ML) models (85 AD targets, 3 ML models per target).
+-  Use the package management system conda to create an environment (called `AlzyFinder`) to perfom locally the ligand-based virtual screening (LBVS) using up to 255 machine learning (ML) models (85 AD targets, 3 ML models per target).
    
     We provide an environment file (yml file) containing all required packages.
 
@@ -61,7 +58,7 @@ You can use AlzyFinder locally (download repository and install dependencies).
     **Note**: You can also create this environment manually. 
     Check ["Alternatively create conda environment manually"](#Alternatively-create-conda-environment-manually) for this.
 
-4.  Activate the conda environment.
+-  Activate the conda environment.
     
     ```bash
     conda activate AlzyFinder
@@ -72,15 +69,15 @@ You can use AlzyFinder locally (download repository and install dependencies).
     
 #### Ligand-Based Virtual Screening
 
-1.  In the `input` folder you will find all ML models for the 85 selected AD targets (3 model per target). In the same `input` folder the file with the molecules to screen should be stored as a .CSV file. As an example, a file called `molecules-to-screen.csv` is given in this reposotory. Change the file with the molecules of interest.
+- In the `input` folder you will find all ML models for the 85 selected AD targets (3 model per target). In the same `input` folder the file with the molecules to screen should be stored as a .CSV file. As an example, a file called `molecules-to-screen.csv` is given in this reposotory. Change the file with the molecules of interest.
 
 
-2. Execute the following python script to screen the selected molecues (in the `molecules-to-screen.csv` file) against all AD tagets. 
+- Execute the following python script to screen the selected molecues (in the `molecules-to-screen.csv` file) against all AD tagets. 
 The probability that a molecule is active against each target is shown as a value from 0 to 1. The higher this value, the higher the probability that the molecule shows activity against a target as a result of a virtual screening with three different ML models. 
 
-  At the end of the `python scrip` you can include a `probability threshold` so that the results are filtered and only molecules with probabilities greater than the selected threshold are presented in a drug-protein interaction network (DPIn). In this case the probabilty is set to *0.7*. 
+At the end of the `python scrip` you can include a `probability threshold` so that the results are filtered and only molecules with probabilities greater than the selected threshold are presented in a drug-protein interaction network (DPIn). In this case the probabilty is set to *0.7*. 
 
-  **Note**: Here we use the Morgan fingerprint using the RDKit. If you want to used another fingerprint, or for further information about available fingerprints check the [rdkit.Chem.rdMolDescriptors module](https://www.rdkit.org/docs/source/rdkit.Chem.rdMolDescriptors.html) for this.
+**Note**: Here we use the Morgan fingerprint using the RDKit. If you want to used another fingerprint, or for further information about available fingerprints check the [rdkit.Chem.rdMolDescriptors module](https://www.rdkit.org/docs/source/rdkit.Chem.rdMolDescriptors.html) for this.
 
 
 ```python 
@@ -211,16 +208,13 @@ if __name__ == "__main__":
 
 ```
 
+- After performing the LBVS, five files will be created and stored in the `output` folder.
 
-
-3. After performing the LBVS, five files will be created and stored in the `output` folder.
-
-- `raw_results.csv`: Complete screening results for each molecule against each ML model (3 models per protein).
-- `results.csv`: Complete screening results as a matrix, including all molecules against all targets (ensemble result). 
-- `ligand_target_probability.csv`: Complete screening (ensemble) results as a list, including all molecules against all targets. This file could be used to create a graph in a software to visualizing complex networks such as [Cytoscape](https://cytoscape.org/)
-- `ligand_target_probability_filtered.csv`: Screening (ensemble) results as a list, filtered using the probablily threshold, including all molecules against all targets. This file could be used to create a graph in a software to visualizing complex networks such as [Cytoscape](https://cytoscape.org/).
-- `nodes.csv`: Classification of the DPIn nodes. Nodes can be *ligands* or *targets*.
-
+    - `raw_results.csv`: Complete screening results for each molecule against each ML model (3 models per protein).
+    - `results.csv`: Complete screening results as a matrix, including all molecules against all targets (ensemble result). 
+    - `ligand_target_probability.csv`: Complete screening (ensemble) results as a list, including all molecules against all targets. This file could be used to create a graph in a software to visualizing complex networks such as [Cytoscape](https://cytoscape.org/)
+    - `ligand_target_probability_filtered.csv`: Screening (ensemble) results as a list, filtered using the probablily threshold, including all molecules against all targets. This file could be used to create a graph in a software to visualizing complex networks such as [Cytoscape](https://cytoscape.org/).
+    - `nodes.csv`: Classification of the DPIn nodes. Nodes can be *ligands* or *targets*.
 
 
     
