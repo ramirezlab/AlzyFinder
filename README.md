@@ -75,7 +75,7 @@ You can use AlzyFinder locally (download repository and install dependencies).
 - Execute the following python script to screen the selected molecues (in the `molecules-to-screen.csv` file) against all AD tagets. 
 The probability that a molecule is active against each target is shown as a value from 0 to 1. The higher this value, the higher the probability that the molecule shows activity against a target as a result of a virtual screening with three different ML models. 
 
-At the end of the `python scrip` you can include a `probability threshold` so that the results are filtered and only molecules with probabilities greater than the selected threshold are presented in a drug-protein interaction network (DPIn). In this case the probabilty is set to *0.7*. 
+At the end of the <a href="https://github.com/ramirezlab/AlzyFinder/blob/main/AlzyFinder_ML-LBVS.py">`AlzyFinder_ML-LBVS.py`</a> python scrip you can include a `probability threshold` so that the results are filtered and only molecules with probabilities greater than the selected threshold are presented in a drug-protein interaction network (DPIn). In this case the probabilty is set to *0.7*. 
 
 **Note**: Here we use the Morgan fingerprint using the RDKit. If you want to used another fingerprint, or for further information about available fingerprints check the [rdkit.Chem.rdMolDescriptors module](https://www.rdkit.org/docs/source/rdkit.Chem.rdMolDescriptors.html) for this.
 
