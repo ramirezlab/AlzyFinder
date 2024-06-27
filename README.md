@@ -1,5 +1,5 @@
 # AlzyFinder
-#### Alzyfinder Platform: A web-based tool for ligand-based virtual screening and network pharmacology
+#### AlzyFinder Platform: A web-based tool for ligand-based virtual screening and network pharmacology
 
 [Ramirez Lab](https://ramirezlab.github.io/index)
 
@@ -20,7 +20,7 @@ Pharmacoinformatics and Systems Pharmacology
 
 Currently, there are few therapeutic alternatives for Alzhiemer's Disease (AD) (lecanemab, aducanumab, donepezil, rivastigmine, galantamine, and memantine)[1]. However, multiple clinical trials (Phase I – IV) of different drugs and bioactive compounds are being carried out [2]. Polypharamacological profiles of drug/targets could be used for drug repurposing, identifying, and validating new targets, and finding new bioactive ligands, among other applications.
 
-Here we introduce the [Alzyfinder Platform](https://www.alzyfinder-platform.udec.cl), a web-based tool designed for virtual screening that uses an array of machine learning models built for over 80 key targets associated with Alzheimer’s disease. The platform’s user-friendly interface facilitates the execution of multiple virtual screening tasks (up to 100 molecules screened at the same time agaist 85 AD targets), utilizing ligand-based drug design approaches.
+Here we introduce the [AlzyFinder Platform](https://www.alzyfinder-platform.udec.cl), a web-based tool designed for virtual screening that uses an array of machine learning models built for over 80 key targets associated with Alzheimer’s disease. The platform’s user-friendly interface facilitates the execution of multiple virtual screening tasks (up to 100 molecules screened at the same time agaist 85 AD targets), utilizing ligand-based drug design approaches.
 
 If users want to screen more than 100 molecules, in this AlzyFinder repository they will find all the ML models, their validation as well as a script to perform the screening locally. For more details on how the machine learning models were built and validated for each AD target, ***see the article***.
 Additionally, since each protein was modeled using three different optimized classifications (one per selected metric balanced accuracy, precision and F1), a fourth integrative model was developed by using a soft-voting method [3] implemented by calculating the average of the classification probabilities provided by each of the three independent models' results. In this ensemble result, each of the three models contributes a vote weighted by its confidence in the classification, calculated from the probability of belonging to the assigned class.
@@ -80,7 +80,7 @@ The probability that a molecule is active against each target is shown as a valu
 
   At the end of the `python scrip` you can include a `probability threshold` so that the results are filtered and only molecules with probabilities greater than the selected threshold are presented in a drug-protein interaction network (DPIn). In this case the probabilty is set to *0.7*. 
 
-  **Note**: Here we use the Morgan fingerprint using the RDKit. If you want to used another fingerprint, or for further informatio about available fingerproint check the [rdkit.Chem.rdMolDescriptors module](https://www.rdkit.org/docs/source/rdkit.Chem.rdMolDescriptors.html) for this.
+  **Note**: Here we use the Morgan fingerprint using the RDKit. If you want to used another fingerprint, or for further information about available fingerprints check the [rdkit.Chem.rdMolDescriptors module](https://www.rdkit.org/docs/source/rdkit.Chem.rdMolDescriptors.html) for this.
 
 
 ```python 
