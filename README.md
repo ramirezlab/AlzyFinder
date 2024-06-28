@@ -224,7 +224,7 @@ if __name__ == "__main__":
 Please contact us if you have questions or suggestions!
 
 * If you have questions regarding our the ML models deposited here, please open an issue on our GitHub repository: https://github.com/ramirezlab/AlzyFinder/issues
-* If you have questions regarding our [AlzyFinder Platform](https://www.alzyfinder-platform.udec.cl) please contact uf via [this form](https://ramirezlab.github.io/7_contact)
+* If you have questions regarding our [AlzyFinder Platform](https://www.alzyfinder-platform.udec.cl) please contact us via [this form](https://ramirezlab.github.io/7_contact)
 * If you have ideas for new AD targets, or how to imporve our [AlzyFinder Platform](https://www.alzyfinder-platform.udec.cl), please send your ideas via [this form](https://ramirezlab.github.io/7_contact)
 * For all other requests, please send us an email: dramirezs@udec.cl
 
