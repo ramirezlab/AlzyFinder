@@ -1,5 +1,5 @@
 # AlzyFinder
-#### AlzyFinder Platform: A web-based tool for ligand-based virtual screening and network pharmacology
+#### AlzyFinder Platform: A web-based tool for machine-learning based virtual screening and network pharmacology
 
 [Pharmacoinformatics and Systems Pharmacology lab](https://ramirezlab.github.io/index) at [Facultad de Ciencias Biológicas](https://cienciasbiologicasudec.cl/) - [Universidad de Concepción](https://www.udec.cl/pexterno/) <br>
 
