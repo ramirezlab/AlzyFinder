@@ -1,5 +1,5 @@
 # AlzyFinder
-#### AlzyFinder Platform: A web-based tool for ligand-based virtual screening and network pharmacology
+#### AlzyFinder: An ML-driven platform for ligand-based virtual screening and network pharmacology
 
 [Pharmacoinformatics and Systems Pharmacology lab](https://ramirezlab.github.io/index) at [Facultad de Ciencias Biológicas](https://cienciasbiologicasudec.cl/) - [Universidad de Concepción](https://www.udec.cl/pexterno/) <br>
 
@@ -17,10 +17,10 @@
 
 Currently, there are few therapeutic alternatives for Alzhiemer's Disease (AD) (lecanemab, aducanumab, donepezil, rivastigmine, galantamine, and memantine)[1]. However, multiple clinical trials (Phase I – IV) of different drugs and bioactive compounds are being carried out [2]. Polypharamacological profiles of drug/targets could be used for drug repurposing, identifying, and validating new targets, and finding new bioactive ligands, among other applications.
 
-Here we introduce the [AlzyFinder Platform](https://www.alzyfinder-platform.udec.cl), a web-based tool designed for virtual screening that uses an array of machine learning models built for over 80 key targets associated with Alzheimer’s disease. The platform’s user-friendly interface facilitates the execution of multiple virtual screening tasks (up to 100 molecules screened at the same time agaist 85 AD targets), utilizing ligand-based drug design approaches.
+Here, we introduce the [AlzyFinder Platform](https://www.alzyfinder-platform.udec.cl), a web-based tool designed for virtual screening that uses an array of machine learning models built for over 80 key targets associated with Alzheimer’s disease. The platform’s user-friendly interface facilitates the execution of multiple virtual screening tasks (up to 100 molecules screened at the same time against 85 AD targets), utilizing ligand-based drug design approaches.
 
 If users want to screen more than 100 molecules, in this AlzyFinder repository they will find all the ML models, their validation as well as a script to perform the screening locally. For more details on how the machine learning models were built and validated for each AD target, ***see the article***.
-Additionally, since each protein was modeled using three different optimized classifications (one per selected metric balanced accuracy, precision and F1), a fourth integrative model was developed by using a soft-voting method [3] implemented by calculating the average of the classification probabilities provided by each of the three independent models' results. In this ensemble result, each of the three models contributes a vote weighted by its confidence in the classification, calculated from the probability of belonging to the assigned class.
+Additionally, since each protein was modeled using three different optimized classifications (one per selected metric balanced accuracy, precision, and F1), a fourth integrative model was developed by using a soft-voting method [3] implemented by calculating the average of the classification probabilities provided by each of the three independent models' results. In this ensemble result, each of the three models contributes a vote weighted by its confidence in the classification, calculated from the probability of belonging to the assigned class.
 
 
 
@@ -38,7 +38,7 @@ You can use AlzyFinder locally (download repository and install dependencies).
 
 -  Get your local copy of the AlzyFinder repository by:
 
-    - Downloading it as zip archive and unzipping it.
+    - Downloading it as a zip archive and unzipping it.
     - Cloning it to your computer using the package `git`:
 
         ```bash
@@ -47,7 +47,7 @@ You can use AlzyFinder locally (download repository and install dependencies).
         
 -  Use the [Anaconda](https://docs.anaconda.com/anaconda/install/) for a clean package version management. 
    
--  Use the package management system conda to create an environment (called `AlzyFinder`) to perfom locally the ligand-based virtual screening (LBVS) using up to 255 machine learning (ML) models (85 AD targets, 3 ML models per target).
+-  Use the package management system conda to create an environment (called `AlzyFinder`) to perform locally the ligand-based virtual screening (LBVS) using up to 255 machine learning (ML) models (85 AD targets, 3 ML models per target).
    
     We provide an environment file (yml file) containing all required packages.
 
@@ -64,20 +64,20 @@ You can use AlzyFinder locally (download repository and install dependencies).
     conda activate AlzyFinder
     ```
     
-    Now you can work within the conda environment and get started with your LBVS campaigns. Have fun!!!
+    Now, you can work within the conda environment and get started with your LBVS campaigns. Have fun!!!
     
     
 #### Ligand-Based Virtual Screening
 
-- In the `input` folder you will find all ML models for the 85 selected AD targets (3 model per target). In the same `input` folder the file with the molecules to screen should be stored as a .CSV file. As an example, a file called `molecules-to-screen.csv` is given in this reposotory. Change the file with the molecules of interest.
+In the `input` folder, you will find all ML models for the 85 selected AD targets (3 models per target). In the same `input` folder, the file with the molecules to screen should be stored as a .CSV file. As an example, a file called `molecules-to-screen.csv` is given in this repository. Change the file with the molecules of interest.
 
 
-- Execute the following python script to screen the selected molecues (in the `molecules-to-screen.csv` file) against all AD tagets. 
-The probability that a molecule is active against each target is shown as a value from 0 to 1. The higher this value, the higher the probability that the molecule shows activity against a target as a result of a virtual screening with three different ML models. 
+- Execute the following Python script to screen the selected molecules (in the `molecules-to-screen.csv` file) against all AD targets. 
+The probability that a molecule is active against each target is shown as a value from 0 to 1. The higher this value, the higher the probability that the molecule shows activity against a target due to a virtual screening with three different ML models. 
 
-At the end of the <a href="https://github.com/ramirezlab/AlzyFinder/blob/main/AlzyFinder_ML-LBVS.py">`AlzyFinder_ML-LBVS.py`</a> python scrip you can include a `probability threshold` so that the results are filtered and only molecules with probabilities greater than the selected threshold are presented in a drug-protein interaction network (DPIn). In this case the probabilty is set to *0.7*. 
+At the end of the <a href="https://github.com/ramirezlab/AlzyFinder/blob/main/AlzyFinder_ML-LBVS.py">`AlzyFinder_ML-LBVS.py`</a> python scrip you can include a `probability threshold` so that the results are filtered and only molecules with probabilities greater than the selected threshold are presented in a Ligand-Protein Interaction network (LPIn). In this case, the probability is set to *0.7*. 
 
-**Note**: Here we use the Morgan fingerprint using the RDKit. If you want to used another fingerprint, or for further information about available fingerprints check the [rdkit.Chem.rdMolDescriptors module](https://www.rdkit.org/docs/source/rdkit.Chem.rdMolDescriptors.html) for this.
+**Note**: Here, we use the Morgan fingerprint using the RDKit. If you want to used another fingerprint, or for further information about available fingerprints check the [rdkit.Chem.rdMolDescriptors module](https://www.rdkit.org/docs/source/rdkit.Chem.rdMolDescriptors.html) for this.
 
 
 ```python 
@@ -243,7 +243,7 @@ The authors of the [AlzyFinder Platform](https://www.alzyfinder-platform.udec.cl
 * Agencia Nacional de Investigación y Desarrollo (ANID) -  Fondo Nacional de Desarrollo Científico y Tecnológico (FONDECYT) – Chile (Grant No. 1220656) 
 
 If you make use of the [AlzyFinder Platform](https://www.alzyfinder-platform.udec.cl) material in scientific publications, please cite our respective articles:
-* Pending....
+* <p>Valero-Rojas, J.; Ramírez, C.; Pacheco-Paternina, L.; Valenzuela-Hormazabal, P.; Santana, P.; González, J.; Gutiérrez-Bunster, T.; Valdés-Jiménez, A.; <b>Ramírez, D.</b> AlzyFinder Platform: A web-based tool for machine-learning based virtual screening and network pharmacology. DOI: 10.26434/chemrxiv-2024-2h0fw. <a href="https://chemrxiv.org/engage/chemrxiv/article-details/669c0e9d01103d79c5b46d7b"> ChemRxiv Preprint</a>.</p>
 
 It will help measure the impact of the [AlzyFinder Platform](https://www.alzyfinder-platform.udec.cl) and future funding!!!
 
