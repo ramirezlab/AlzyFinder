@@ -91,7 +91,7 @@ def predictor(models_path, data_path):
         # Select columns corresponding to this target
         cols_target = [col for col in df_results.columns if target in col]
         # Calculate the average and add it as a new column
-        df_results[f'{target}'] = df_results[cols_target].mean(axis=1)
+        df_results[f'{target}'] = df_results[cols_target].median(axis=1)
         df_results.drop(columns=cols_target, inplace=True)
     # Save results
     df_results.to_csv('output/results.csv', index=False)
