@@ -243,7 +243,7 @@ The authors of the [AlzyFinder Platform](https://www.alzyfinder-platform.udec.cl
 * Agencia Nacional de Investigación y Desarrollo (ANID) -  Fondo Nacional de Desarrollo Científico y Tecnológico (FONDECYT) – Chile (Grant No. 1220656) 
 
 If you make use of the [AlzyFinder Platform](https://www.alzyfinder-platform.udec.cl) material in scientific publications, please cite our respective articles:
-* <p>Valero-Rojas, J.; Ramírez, C.; Pacheco-Paternina, L.; Valenzuela-Hormazabal, P.; Santana, P.; González, J.; Gutiérrez-Bunster, T.; Valdés-Jiménez, A.; <b>Ramírez, D.</b> AlzyFinder Platform: A web-based tool for machine-learning based virtual screening and network pharmacology. DOI: 10.26434/chemrxiv-2024-2h0fw. <a href="https://chemrxiv.org/engage/chemrxiv/article-details/669c0e9d01103d79c5b46d7b"> ChemRxiv Preprint</a>.</p>
+* <p>Valero-Rojas, J.; Ramírez, C.; Pacheco-Paternina, L.; Valenzuela-Hormazabal, P.; Santana, P.; González, J.; Gutiérrez-Bunster, T.; Valdés-Jiménez, A.; <b>Ramírez, D.</b> AlzyFinder: A Machine-Learning-Driven Platform for Ligand-Based Virtual Screening and Network Pharmacology. DOI: 10.1021/acs.jcim.4c01481. <a href="https://pubs.acs.org/doi/full/10.1021/acs.jcim.4c01481">JCIM</a>.</p>
 
 It will help measure the impact of the [AlzyFinder Platform](https://www.alzyfinder-platform.udec.cl) and future funding!!!
 
